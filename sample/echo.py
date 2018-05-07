@@ -11,9 +11,10 @@ display.start()
 
 logging.basicConfig(level=logging.DEBUG)
 
-driver = WhatsAPIDriver()
+#driver = WhatsAPIDriver()
+driver = WhatsAPIDriver(username="agrumcito",profile='/home/agrum-user/Projects/visor-whatsapp-api/MozProfile',headless=True)
 print("Waiting for QR")
-driver.get_qr()
+#driver.get_qr()
 driver.wait_for_login()
 
 print("Bot started")
